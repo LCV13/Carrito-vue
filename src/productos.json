@@ -1,0 +1,38 @@
+[
+    {
+        "id": "01",
+        "titulo": "Guitarra eléctrica",
+        "imagen": "https://picsum.photos/id/145/640/480",
+        "precio": "1200.00"
+    },
+    {
+        "id": "02",
+        "titulo": "iPhone",
+        "imagen": "https://picsum.photos/id/160/640/480",
+        "precio": "1800.00"
+    },
+    {
+        "id": "03",
+        "titulo": "Reloj antiguo",
+        "imagen": "https://picsum.photos/id/175/640/480",
+        "precio": "200.00"
+    },
+    {
+        "id": "04",
+        "titulo": "Cámara Vintage",
+        "imagen": "https://picsum.photos/id/250/640/480",
+        "precio": "950.00"
+    },
+    {
+        "id": "05",
+        "titulo": "Taza Cubana",
+        "imagen": "https://picsum.photos/id/30/640/480",
+        "precio": "99.00"
+    },
+    {
+        "id": "06",
+        "titulo": "Amazón Kindle",
+        "imagen": "https://picsum.photos/id/367/640/480",
+        "precio": "99.00"
+    }
+]
