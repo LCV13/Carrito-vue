@@ -5,30 +5,41 @@
       <div class="col-md-7">
         <div class="row">
           <div class="col-md-6" v-for="prod in productos" :key="prod.id">
-            <producto :producto="prod"></producto>
+            <producto :producto="prod" v-on:agregar-carrito="agregarProdCarrito"></producto>
           </div>
         </div>
       </div>
+
+       <div class="col-md-5 my-5">
+      <carrito :items="carrito"></carrito>
     </div>
 
+    </div>
   </div>
 </template>
 
 <script>
 import productos from './productos.json'
 import Producto from './components/Producto.vue'
-
+import Carrito from './components/Carrito.vue'
 
 export default {
   name: 'App',
   components: {
-     Producto 
+     Producto,
+     Carrito
   }, 
   data(){
     return{
-      productos
+      productos,
+      carrito:[]
     }
-  }
+  },
+    methods:{
+      agregarProdCarrito(producto){
+        this.carrito.push(producto);
+      }
+    }
 }
 </script>
 

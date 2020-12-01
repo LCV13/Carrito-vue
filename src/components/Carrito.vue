@@ -1,8 +1,8 @@
 <template>
     <div>
         <ul class="list-group">
-            <li class="list-group-item">
-                Titulo - $Precio
+            <li class="list-group-item" v-for="item in items" :key="item.id">
+                {{item.titulo}} - ${{item.precio}}
             </li>
         </ul>
     </div>
@@ -10,6 +10,7 @@
 
 <script>
 export default {
-    name: 'Carrito'
+    name: 'Carrito',
+    props: ['items']
 }
 </script>
