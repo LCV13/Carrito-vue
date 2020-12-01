@@ -6,7 +6,7 @@
             <p class="text-muted card-text">$ {{ Number(producto.precio).toFixed() }}</p>
             <button @click="agregarCarrito(producto)" class="btn btn-primary form-control" :disabled="estaEnCarrito">
                 {{estaEnCarrito ? 'Agregado' : 'Agregar al carrito'}}
-                </button>
+            </button>
         </div>
     </div>
 </template>

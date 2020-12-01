@@ -11,7 +11,7 @@
       </div>
 
        <div class="col-md-5 my-5">
-      <carrito :items="carrito"></carrito>
+      <carrito :items="carrito" v-on:removerItem="removerProducto"></carrito>
     </div>
 
     </div>
@@ -46,6 +46,9 @@ export default {
         }else{
           return false;
         }
+      },
+      removerProducto(producto){
+        this.carrito = this.carrito.filter(item => item.id != producto.id)
       }
     }
 }
